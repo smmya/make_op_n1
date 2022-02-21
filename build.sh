@@ -6,7 +6,7 @@ if [ ! -z "$1" ];then
 fi
 
 TMPDIR=openwrt_rootfs
-OUTDIR=/opt/imgs/docker
+OUTDIR=/home/runner/work/action-openwrt-lede-mm-N1/action-openwrt-lede-mm-N1/openwrt/bin/targets/armvirt/64/
 IMG_NAME=smmya/openwrt-aarch64-N1
 
 [ -d "$TMPDIR" ] && rm -rf "$TMPDIR"
