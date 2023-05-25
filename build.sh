@@ -12,7 +12,7 @@ IMG_NAME=smmya/openwrt-aarch64-n1
 [ -d "$TMPDIR" ] && rm -rf "$TMPDIR"
 
 mkdir -p "$TMPDIR"  && \
-gzip -dc openwrt-armvirt-64-default-rootfs.tar.gz | ( cd "$TMPDIR" && tar xf - ) && \
+gzip -dc openwrt-armvirt-64-generic-rootfs.tar.gz | ( cd "$TMPDIR" && tar xf - ) && \
 cp -f patches/rc.local "$TMPDIR/etc/" && \
 cp -f patches/cpustat "$TMPDIR/usr/bin/" && \
 chmod 755 "$TMPDIR/usr/bin/cpustat" && \
